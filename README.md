@@ -44,7 +44,7 @@ Il dataset non va committato nella repo. Il runner crea un symlink locale `datas
 
 ## Salvataggio risultati esperimenti
 
-Il runner Colab salva automaticamente su GitHub solo i file generati dentro la cartella della repo in Colab:
+Il runner Colab generale salva automaticamente su GitHub solo i file generati dentro la cartella della repo in Colab:
 
 ```text
 /content/ProjectML/
@@ -70,6 +70,68 @@ Alcuni file dentro la repo sono comunque esclusi dal `.gitignore`, quindi non ve
 - `predictions.npy` e cartelle di valutazione locali.
 
 Per i checkpoint finali o molto pesanti conviene usare Google Drive e documentare in repo il path o il link, per esempio in `models/README.md`. In repo vanno invece tenuti metriche, configurazioni, split, grafici e note degli esperimenti.
+
+## Esperimento ResNet18 ex novo
+
+Il notebook ResNet18 non vive su `main`, ma sul branch template:
+
+```text
+exp/resnet18-exnovo
+```
+
+File notebook:
+
+```text
+src/resnet18_exnovo/resnet18_exnovo_colab.ipynb
+```
+
+Per usarlo:
+
+1. Aprire la repo su GitHub.
+2. Cambiare branch da `main` a `exp/resnet18-exnovo`.
+3. Aprire o scaricare `src/resnet18_exnovo/resnet18_exnovo_colab.ipynb`.
+4. Eseguirlo su Colab con GPU attiva.
+5. Inserire un GitHub token con permesso `Contents: Read and write` quando richiesto.
+
+Il branch `exp/resnet18-exnovo` e un template: non deve contenere risultati permanenti. Ogni run del notebook crea automaticamente un branch nuovo con timestamp, per esempio:
+
+```text
+exp-resnet18-exnovo-20260629-1206
+```
+
+Ogni run salva i risultati leggeri in una cartella dedicata dentro quel branch:
+
+```text
+results/resnet18_exnovo_20260629-1206/
+```
+
+Struttura attesa della cartella risultati:
+
+```text
+results/resnet18_exnovo_YYYYMMDD-HHMM/
+  split.csv
+  config.json
+  class_weights.csv
+  history.csv
+  summary.json
+  classification_report.txt
+  confusion_matrix.csv
+  confusion_matrix.png
+  training_curves.png
+  notes.md
+```
+
+Il checkpoint del modello non viene pushato su GitHub. Viene salvato su Drive in una cartella con lo stesso identificativo della run:
+
+```text
+/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_YYYYMMDD-HHMM/resnet18_exnovo_best.pth
+```
+
+Questa organizzazione evita conflitti perche ogni run ha sia un branch diverso sia una cartella `results/` diversa. Il primo run gia eseguito e stato preservato nel branch:
+
+```text
+exp-resnet18-exnovo-20260629-1206
+```
 
 ## Workflow consigliato
 
