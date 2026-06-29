@@ -1,0 +1,35 @@
+# Dataset e dati locali
+dataset/
+eval/
+data/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Modelli e checkpoint pesanti
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Output esperimenti
+runs/
+wandb/
+outputs/
+logs/
+predictions.npy
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter/Colab
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
