@@ -1,0 +1,8 @@
+{
+  "run_name": "resnet18_exnovo_v3_20260629-2107",
+  "run_branch": "exp-resnet18-exnovo-v3-20260629-2107",
+  "results_dir": "/content/ProjectML/results/resnet18_exnovo_v3_20260629-2107",
+  "best_epoch": 19,
+  "best_val_bal_acc": 0.972507685868275,
+  "checkpoint_path_drive": "/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v3_20260629-2107/resnet18_exnovo_v3_best.pth"
+}
