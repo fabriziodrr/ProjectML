@@ -41,6 +41,35 @@ La metrica principale e la balanced accuracy, quindi ogni esperimento deve monit
 
 Il dataset non va committato nella repo. Il runner crea un symlink locale `dataset/` dentro Colab, ma `.gitignore` impedisce di versionarlo.
 
+## Salvataggio risultati esperimenti
+
+Il runner Colab salva automaticamente su GitHub solo i file generati dentro la cartella della repo in Colab:
+
+```text
+/content/ProjectML/
+```
+
+L'ultima cella del runner esegue `git add -A`, `git commit` e `git push`. Quindi vengono versionati i risultati leggeri salvati dentro la repo, per esempio:
+
+- `splits/split.csv`
+- `splits/class_weights.csv`
+- `experiments/e1_baseline/config.json`
+- `experiments/e1_baseline/metrics.csv`
+- `experiments/e1_baseline/confusion_matrix.png`
+- `experiments/e1_baseline/notes.md`
+- `reports/report_draft.md`
+
+Non vengono salvati automaticamente i file creati fuori dalla repo, per esempio in `/content/` o in una cartella Google Drive, a meno che vengano copiati dentro `/content/ProjectML/` prima della cella finale di commit/push.
+
+Alcuni file dentro la repo sono comunque esclusi dal `.gitignore`, quindi non vengono pushati anche se sono in `/content/ProjectML/`:
+
+- dataset e zip del dataset;
+- checkpoint e modelli pesanti: `.pth`, `.pt`, `.ckpt`, `.onnx`;
+- cartelle temporanee come `outputs/`, `logs/`, `runs/`, `wandb/`;
+- `predictions.npy` e cartelle di valutazione locali.
+
+Per i checkpoint finali o molto pesanti conviene usare Google Drive e documentare in repo il path o il link, per esempio in `models/README.md`. In repo vanno invece tenuti metriche, configurazioni, split, grafici e note degli esperimenti.
+
 ## Workflow consigliato
 
 - Tenere `main` come versione stabile condivisa.
