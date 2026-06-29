@@ -1,0 +1,30 @@
+{
+  "experiment": "resnet34_exnovo_v4",
+  "run_id": "20260629-1825",
+  "run_name": "resnet34_exnovo_v4_20260629-1825",
+  "base_branch": "exp/resnet18-exnovo-v4",
+  "run_branch": "exp-resnet18-exnovo-v4-20260629-1825",
+  "model": "torchvision.models.resnet34 pretrained ImageNet",
+  "strategy": "resnet34_full_finetuning_discriminative_lrs_targeted_soft_class_weights",
+  "seed": 42,
+  "val_size": 0.2,
+  "batch_size": 32,
+  "epochs": 45,
+  "patience": 10,
+  "backbone_lr": 7e-05,
+  "head_lr": 0.0004,
+  "dropout_p": 0.3,
+  "weight_decay": 8e-05,
+  "class_weight_power": 0.45,
+  "weak_class_boosts": {
+    "3": 1.1,
+    "6": 1.08
+  },
+  "loss": "CrossEntropyLoss with softened inverse frequency class weights and small Metal/Plastic boost",
+  "augmentation": "Resize, moderate RandomResizedCrop, horizontal flip, small rotation, light ColorJitter, RandomErasing; no shear/strong zoom; no per-class augmentation",
+  "course_arguments": "transfer learning, learning-rate scheduling, early stopping, L2 regularization, dropout, data augmentation",
+  "dataset_drive_zip": "/content/drive/MyDrive/waste_type_identification.zip",
+  "dataset_drive_dir": "/content/drive/MyDrive/waste_type_identification",
+  "results_dir": "/content/ProjectML/results/resnet34_exnovo_v4_20260629-1825",
+  "checkpoint_drive_dir": "/content/drive/MyDrive/ProjectML_checkpoints/resnet34_exnovo_v4_20260629-1825"
+}

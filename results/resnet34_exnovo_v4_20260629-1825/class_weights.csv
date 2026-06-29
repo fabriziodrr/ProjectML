@@ -1,0 +1,9 @@
+label,class_name,train_count,loss_weight
+0,Battery,756,1.0970179
+1,Clothing,5841,0.43714884
+2,Glass,1609,0.78090525
+3,Metal,615,1.3241812
+4,Organic,788,1.0767422
+5,Papery,1553,0.79345334
+6,Plastic,692,1.2328907
+7,Undifferentiated,558,1.2576597
