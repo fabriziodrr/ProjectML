@@ -28,7 +28,6 @@ venv/
 
 # Jupyter/Colab
 .ipynb_checkpoints/
-waste_classifier_v3.2.ipynb
 
 # OS/editor
 .DS_Store
