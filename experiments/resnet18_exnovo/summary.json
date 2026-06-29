@@ -1,0 +1,5 @@
+{
+  "best_epoch": 24,
+  "best_val_bal_acc": 0.9486868691293152,
+  "checkpoint_path_drive": "/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo/resnet18_exnovo_best.pth"
+}
