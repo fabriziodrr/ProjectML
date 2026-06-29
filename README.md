@@ -6,6 +6,7 @@ Repository condivisa per il project work universitario di Machine Learning: clas
 
 - `PROJECT_CONTEXT.md`: riassunto operativo del progetto, vincoli, label, metrica e consegna.
 - `colab_runner.ipynb`: notebook Colab della nostra repo, configurato per `fabriziodrr/ProjectML`, con clone/pull, preparazione dataset, lancio esperimenti e commit/push.
+- `src/resnet18_exnovo/resnet18_exnovo_colab.ipynb`: esperimento ResNet18 ex novo, standalone per Colab, con salvataggio risultati leggeri su GitHub.
 - `project_work_Computer_Engineering.md`: traccia del project work.
 - `test_Computer_Engineering.md`: specifica del notebook/funzione di test richiesta.
 - `Slides/` e `Laboratorio/`: materiale del corso e dei laboratori.
