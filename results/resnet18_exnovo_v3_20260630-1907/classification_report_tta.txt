@@ -1,0 +1,14 @@
+                  precision    recall  f1-score   support
+
+         Battery       0.98      0.98      0.98       189
+        Clothing       1.00      0.99      0.99      1461
+           Glass       0.97      0.98      0.97       402
+           Metal       0.94      0.97      0.96       154
+         Organic       0.97      0.98      0.97       197
+          Papery       0.96      0.97      0.97       388
+         Plastic       0.96      0.91      0.93       173
+Undifferentiated       0.95      0.99      0.97       139
+
+        accuracy                           0.98      3103
+       macro avg       0.97      0.97      0.97      3103
+    weighted avg       0.98      0.98      0.98      3103
