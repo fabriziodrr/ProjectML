@@ -1,0 +1,14 @@
+{
+  "run_name": "reject_top2_margin_v3_20260630-1214",
+  "run_branch": "exp-reject-top2-margin-v3-20260630-1214",
+  "source_model": "resnet18_exnovo_v3_20260629-2107",
+  "reject_method": "top2_margin",
+  "base_accuracy": 0.9800193361263294,
+  "base_balanced_accuracy": 0.9728186311419068,
+  "selected_threshold": 0.4,
+  "selected_coverage": 0.9610054785691267,
+  "selected_rejection_rate": 0.03899452143087334,
+  "selected_accepted_accuracy": 0.9916163648558015,
+  "selected_accepted_balanced_accuracy": 0.9862653607130365,
+  "selection_rule": "maximize accepted balanced accuracy with coverage >= 0.95"
+}
