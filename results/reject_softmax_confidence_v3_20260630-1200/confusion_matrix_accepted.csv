@@ -1,0 +1,9 @@
+,Battery,Clothing,Glass,Metal,Organic,Papery,Plastic,Undifferentiated
+Battery,179,0,1,0,0,1,0,0
+Clothing,0,1420,0,0,0,0,0,2
+Glass,0,0,378,1,1,0,2,0
+Metal,1,0,1,143,0,0,0,0
+Organic,0,0,0,0,192,1,0,0
+Papery,1,0,1,0,2,356,0,0
+Plastic,0,0,4,1,0,1,145,0
+Undifferentiated,0,0,0,0,0,0,0,132

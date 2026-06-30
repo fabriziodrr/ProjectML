@@ -1,0 +1,14 @@
+{
+  "run_name": "reject_softmax_confidence_v3_20260630-1200",
+  "run_branch": "exp-reject-softmax-confidence-v3-20260630-1200",
+  "source_model": "resnet18_exnovo_v3_20260629-2107",
+  "reject_method": "softmax_confidence",
+  "base_accuracy": 0.9800193361263294,
+  "base_balanced_accuracy": 0.9728186311419068,
+  "selected_threshold": 0.6,
+  "selected_coverage": 0.955849178214631,
+  "selected_rejection_rate": 0.044150821785369,
+  "selected_accepted_accuracy": 0.99291975724882,
+  "selected_accepted_balanced_accuracy": 0.9884064926557898,
+  "selection_rule": "maximize accepted balanced accuracy with coverage >= 0.95"
+}
