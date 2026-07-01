@@ -1,0 +1,10 @@
+{
+  "run_name": "resnet18_exnovo_v5_20260701-1033",
+  "run_branch": "exp-resnet18-exnovo-v5-20260701-1033",
+  "results_dir": "/content/ProjectML/results/resnet18_exnovo_v5_20260701-1033",
+  "best_epoch": 14,
+  "best_val_bal_acc": 0.9684242087388779,
+  "checkpoint_path_drive": "/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v5_20260701-1033/resnet18_exnovo_v5_best.pth",
+  "tta_val_acc": 0.9693844666451821,
+  "tta_val_bal_acc": 0.9678678096287742
+}
