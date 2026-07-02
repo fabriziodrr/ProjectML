@@ -1,0 +1,18 @@
+{
+  "psi_a": {
+    "threshold": 0.42555826902389526,
+    "reject_rate": 0.016108247422680466,
+    "coverage": 0.9838917525773195,
+    "accepted_ba": 0.9799375046463366,
+    "accepted_acc": 0.9836280288146693,
+    "errors_avoided": 11
+  },
+  "psi_b": {
+    "threshold": 0.18452738225460052,
+    "reject_rate": 0.022551546391752608,
+    "coverage": 0.9774484536082474,
+    "accepted_ba": 0.9830579279359211,
+    "accepted_acc": 0.984838497033619,
+    "errors_avoided": 13
+  }
+}
