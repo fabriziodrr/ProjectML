@@ -1,0 +1,33 @@
+{
+  "experiment": "resnet18_exnovo_v8",
+  "run_id": "20260702-1238",
+  "run_name": "resnet18_exnovo_v8_20260702-1238",
+  "base_branch": "exp/resnet18-exnovo-v8",
+  "run_branch": "exp-resnet18-exnovo-v8-20260702-1238",
+  "model": "ResNet18 pretrained ImageNet",
+  "strategy": "light_kfold3_StratifiedKFold_two_phase_freeze3ep_15epochs_patience4_FocalLoss_gamma2_LS0.10_RejectOption_Vento_noTTAdefault",
+  "seed": 42,
+  "k_folds": 3,
+  "batch_size": 32,
+  "epochs": 15,
+  "patience": 4,
+  "two_phase_freeze_epochs": 3,
+  "run_tta_reject": false,
+  "focal_gamma": 2.0,
+  "label_smoothing": 0.1,
+  "backbone_lr": 0.0001,
+  "head_lr": 0.0005,
+  "dropout_p": 0.3,
+  "weight_decay": 0.0002,
+  "reject_costs": {
+    "Cc": 1.0,
+    "Cr": 3.0,
+    "Ce": 10.0
+  },
+  "reliability_functions": [
+    "psi_a (max softmax)",
+    "psi_b (top2 margin)"
+  ],
+  "course_arguments": "transfer learning (S:12), two-phase (S:12), discriminative LRs (S:12), WeightedRandomSampler (S:05), label smoothing (S:09), focal loss (S:09), ReduceLROnPlateau (S:09), early stopping (S:09), dropout (S:13), data augmentation (S:05), K-Fold CV (S:04, L:01), Reject Option Vento (S:11, L:reject_option), balanced accuracy (S:05); TTA opzionale ma disattivata per contenere il costo computazionale",
+  "results_dir": "/content/ProjectML/results/resnet18_exnovo_v8_20260702-1238"
+}

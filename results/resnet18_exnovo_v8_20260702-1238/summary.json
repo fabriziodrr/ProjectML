@@ -1,0 +1,29 @@
+{
+  "run_name": "resnet18_exnovo_v8_20260702-1238",
+  "run_branch": "exp-resnet18-exnovo-v8-20260702-1238",
+  "k_folds": 3,
+  "epochs": 15,
+  "patience": 4,
+  "two_phase_freeze_epochs": 3,
+  "run_tta_reject": false,
+  "kfold_ba_mean": 0.9494743966837839,
+  "kfold_ba_std": 0.0018734110942407566,
+  "fold_bas": [
+    0.9477673684021022,
+    0.9485731901841263,
+    0.952082631465123
+  ],
+  "standard_psi_a": {
+    "ba_mean": 0.9654587294623376,
+    "ba_std": 0.0057793960993497975,
+    "reject_rate_mean": 0.03938101162964436
+  },
+  "standard_psi_b": {
+    "ba_mean": 0.9648370996134404,
+    "ba_std": 0.004650206162728948,
+    "reject_rate_mean": 0.03615848175436922
+  },
+  "tta_psi_a": null,
+  "tta_psi_b": null,
+  "best_reliability": "psi_a"
+}

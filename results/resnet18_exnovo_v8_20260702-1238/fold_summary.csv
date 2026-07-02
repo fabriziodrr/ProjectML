@@ -1,0 +1,4 @@
+fold,checkpoint,best_ba,best_epoch
+0,/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v8_20260702-1238/fold0_best.pth,0.9477673684021022,14
+1,/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v8_20260702-1238/fold1_best.pth,0.9485731901841263,10
+2,/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v8_20260702-1238/fold2_best.pth,0.952082631465123,7
