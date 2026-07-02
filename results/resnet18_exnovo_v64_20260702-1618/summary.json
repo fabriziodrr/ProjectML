@@ -1,0 +1,46 @@
+{
+  "run_name": "resnet18_exnovo_v64_20260702-1618",
+  "run_branch": "exp-resnet18-exnovo-v64-20260702-1618",
+  "results_dir": "/content/ProjectML/results/resnet18_exnovo_v64_20260702-1618",
+  "best_epoch": 39,
+  "best_val_bal_acc": 0.971801907742879,
+  "checkpoint_path_drive": "/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v64_20260702-1618/resnet18_exnovo_v64_best.pth",
+  "val_eval_ba": 0.9739955258908874,
+  "val_eval_tta_ba": 0.9809987920381995,
+  "reject_standard": {
+    "psi_a": {
+      "threshold": 0.3297428488731384,
+      "reject_rate": 0.005154639175257714,
+      "coverage": 0.9948453608247423,
+      "accepted_ba": 0.9776574300564396,
+      "accepted_acc": 0.9825129533678757,
+      "errors_avoided": 5
+    },
+    "psi_b": {
+      "threshold": 0.12409323453903198,
+      "reject_rate": 0.01224226804123707,
+      "coverage": 0.9877577319587629,
+      "accepted_ba": 0.9799140926287735,
+      "accepted_acc": 0.9843444227005871,
+      "errors_avoided": 8
+    }
+  },
+  "reject_tta": {
+    "psi_a": {
+      "threshold": 0.3341149389743805,
+      "reject_rate": 0.005798969072164928,
+      "coverage": 0.9942010309278351,
+      "accepted_ba": 0.9820699476716817,
+      "accepted_acc": 0.9857420609202852,
+      "errors_avoided": 5
+    },
+    "psi_b": {
+      "threshold": 0.1450466513633728,
+      "reject_rate": 0.01675257731958768,
+      "coverage": 0.9832474226804123,
+      "accepted_ba": 0.9862507204060299,
+      "accepted_acc": 0.9908256880733946,
+      "errors_avoided": 13
+    }
+  }
+}
