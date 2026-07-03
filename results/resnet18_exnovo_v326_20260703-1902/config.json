@@ -1,0 +1,31 @@
+{
+  "experiment": "resnet18_exnovo_v324",
+  "run_id": "20260703-1902",
+  "run_name": "resnet18_exnovo_v326_20260703-1902",
+  "base_branch": "exp/resnet18-exnovo-v326",
+  "run_branch": "exp-resnet18-exnovo-v326-20260703-1902",
+  "model": "torchvision.models.resnet18 pretrained ImageNet",
+  "strategy": "two_phase_freeze3ep_modAug_cov97_FP32_RejectOption_Vento_coverage95_psiA_psiB_split8020_val5050",
+  "seed": 42,
+  "val_size": 0.2,
+  "batch_size": 32,
+  "epochs": 40,
+  "patience": 8,
+  "two_phase_freeze_epochs": 3,
+  "backbone_lr": 0.0001,
+  "head_lr": 0.0005,
+  "dropout_p": 0.25,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.1,
+  "reliability_functions": [
+    "psi_a",
+    "psi_b"
+  ],
+  "loss": "CrossEntropyLoss with sqrt inverse frequency class weights and label smoothing 0.1",
+  "augmentation": "Resize, moderate RandomResizedCrop, horizontal flip, small rotation, light ColorJitter, RandomErasing; WeightedRandomSampler for class balancing",
+  "course_arguments": "transfer learning (two-phase freeze/unfreeze, S:12), CrossEntropy, label smoothing, ReduceLROnPlateau, early stopping, L2 regularization, dropout, data augmentation, class balancing (WeightedRandomSampler), balanced accuracy, Reject Option (Vento et al., S:11)",
+  "dataset_drive_zip": "/content/drive/MyDrive/waste_type_identification.zip",
+  "dataset_drive_dir": "/content/drive/MyDrive/waste_type_identification",
+  "results_dir": "/content/ProjectML/results/resnet18_exnovo_v326_20260703-1902",
+  "checkpoint_drive_dir": "/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v326_20260703-1902"
+}
