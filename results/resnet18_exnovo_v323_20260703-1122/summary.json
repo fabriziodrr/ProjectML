@@ -1,0 +1,28 @@
+{
+  "run_name": "resnet18_exnovo_v323_20260703-1122",
+  "run_branch": "exp-resnet18-exnovo-v323-20260703-1122",
+  "results_dir": "/content/ProjectML/results/resnet18_exnovo_v323_20260703-1122",
+  "best_epoch": 25,
+  "best_val_ba": 0.9713424985722385,
+  "checkpoint_path_drive": "/content/drive/MyDrive/ProjectML_checkpoints/resnet18_exnovo_v323_20260703-1122/resnet18_exnovo_v323_best.pth",
+  "val_eval_ba": 0.9709702596029723,
+  "val_eval_acc": 0.9690721649484536,
+  "reject_standard": {
+    "psi_a": {
+      "threshold": 0.5875132083892822,
+      "reject_rate": 0.05154639175257736,
+      "coverage": 0.9484536082474226,
+      "accepted_ba": 0.9868440994849283,
+      "accepted_acc": 0.9877717391304348,
+      "errors_avoided": 30
+    },
+    "psi_b": {
+      "threshold": 0.38657158613204956,
+      "reject_rate": 0.05283505154639179,
+      "coverage": 0.9471649484536082,
+      "accepted_ba": 0.9873474988790693,
+      "accepted_acc": 0.9884353741496599,
+      "errors_avoided": 31
+    }
+  }
+}
